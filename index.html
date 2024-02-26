@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login</title>
+  </head>
+
+  <body class="Corpo">
+    <header class="cabecalho">
+
+      <h1>Controle de Estoque</h1>
+      
+    </header>
+    <h2>Cadastro do Produto:</h2>
+   <br>
+<div class="pai" >
+        <div class="campo_in">
+          <label for="nome ">Nome Do Produto:</label>
+          <input
+            type="text"
+            id="nome"
+            name="Nomeproduto"
+            placeholder="Digite o nome do Produto"
+          />
+        </div>
+        <div class="campo_input">
+          <label for="id">Código de barras:</label>
+          <input id="codigoDeBarras" name="codigoDeBarras" minlength="8" maxlength="13" placeholder="Digite o Código">
+      </div>
+      <div class="div_flex">
+        <div class="campo_put">
+            <label class="titulo" for="produto">Estoque:</label>
+         <input class="quant" type="number" name="qtdProduto" id="estoque" min="0" max="1000" placeholder="Unidades do estoque">  
+        </div>
+        <div class="valor">
+          <label for="id">Valor da unidade:</label>
+          <input id="valor" name="valorUnidade" minlength="0" maxlength="" placeholder="Digite o valor do produto">
+      </div>
+      </div>
+      <input id="btn" class="botao" type="submit" />
+      </div>
+      
+    </form>
+    <script src="script.js">
+      
+    </script>
+  </body>
+</html>
